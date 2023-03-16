@@ -1,23 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <label>
+      Input OUTSIDE the component:
+      <input type="text" />
+    </label>
+    <SyncfusionGid />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import SyncfusionGid from './components/SyncfusionGrid.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    SyncfusionGid
   },
 })
 export default class App extends Vue {}
 </script>
 
 <style>
+@import '~@syncfusion/ej2-base/styles/material.css';
+@import '~@syncfusion/ej2-buttons/styles/material.css';
+@import '~@syncfusion/ej2-calendars/styles/material.css';
+@import '~@syncfusion/ej2-dropdowns/styles/material.css';
+@import '~@syncfusion/ej2-inputs/styles/material.css';
+@import '~@syncfusion/ej2-navigations/styles/material.css';
+@import '~@syncfusion/ej2-popups/styles/material.css';
+@import '~@syncfusion/ej2-splitbuttons/styles/material.css';
+@import "~@syncfusion/ej2-vue-grids/styles/material.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,5 +38,16 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+}
+
+input {
+  margin: 20px;
 }
 </style>
