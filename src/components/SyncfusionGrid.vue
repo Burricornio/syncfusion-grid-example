@@ -46,3 +46,9 @@ export default class SyncfusionGrid extends Vue {
   ]
 }
 </script>
+
+<style scoped>
+  div {
+    margin-bottom: 40px;
+  }
+</style>

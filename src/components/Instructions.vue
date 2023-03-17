@@ -29,7 +29,11 @@ export default class Instructions extends Vue {}
   }
 
   h1 {
-    margin: 30px 0 0 0;
+    margin: 25px 0 0 0;
+    text-transform: uppercase;
+    background: green;
+    color: white;
+    padding: 10px;
   }
 
   ul {
