@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <label>
-      Input OUTSIDE the component:
+      Input OUTSIDEE the component:
       <input type="text" />
     </label>
     <SyncfusionGid />
