@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <instructions />
+    <SyncfusionGrid />
+    <hr>
     <label>
       Input OUTSIDE the component:
       <input type="text" />
     </label>
-    <SyncfusionGrid />
   </div>
 </template>
 
