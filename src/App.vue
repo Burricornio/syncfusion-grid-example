@@ -1,20 +1,23 @@
 <template>
   <div id="app">
+    <instructions />
     <label>
-      Input OUTSIDEE the component:
+      Input OUTSIDE the component:
       <input type="text" />
     </label>
-    <SyncfusionGid />
+    <SyncfusionGrid />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import SyncfusionGid from './components/SyncfusionGrid.vue';
+import SyncfusionGrid from './components/SyncfusionGrid.vue';
+import Instructions from './components/Instructions.vue';
 
 @Component({
   components: {
-    SyncfusionGid
+    SyncfusionGrid,
+    Instructions
   },
 })
 export default class App extends Vue {}
